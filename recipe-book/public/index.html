@@ -36,11 +36,11 @@ body {
 	color: #B2AC88;		
 }
 .navbar a, .navbar a:active {
-	color: #999;
+	color: white;
 	background: transparent;
 }
 .navbar .navbar-nav a:hover, .navbar .navbar-nav a:focus {
-	color: #B2AC88 !important;
+	color: grey !important;
 }
 .navbar .navbar-nav > a.active, .navbar .navbar-nav.show > a {
 	color: #B2AC88 !important;
@@ -49,8 +49,8 @@ body {
 .navbar .form-inline .input-group-text {
 	box-shadow: none;
 	border-radius: 2px 0 0 2px;
-	background: #f5f5f5;
-	border-color: #dfe3e8;
+	background: white;
+	border-color: white;
 	font-size: 16px;
 }
 .navbar .form-inline i {
@@ -136,6 +136,10 @@ body {
 		width: 100%;
 	}
 }
+.btn:hover {
+	background-color: #B2AC88;
+	border-color: #B2AE90;
+}
 </style>
 </head> 
 <body>
@@ -161,8 +165,8 @@ body {
 			</div>
 		</form>
 		<div class="navbar-nav ml-auto">
-			<div class="nav-item dropdown login-dropdown">
-				<a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle"><i class="fa fa-user-o"></i> Login</a>
+			<div class="btn btn-default">
+				<a class="btn btn-primary fa-md mb-1" href="page1.html" role="button">Login</a>
 				<div class="dropdown-menu">					
                     <form class="form-inline login-form" action="/examples/actions/confirmation.php" method="post">
                         <div class="input-group">
@@ -214,7 +218,8 @@ body {
 >
   <!-- Inner -->
   <style>
-  .btn-primary {
+
+  .btn-primary { 
     background-color: #B2AC88;
     border-color: #B2AC88;
   }
