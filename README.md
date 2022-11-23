@@ -1,4 +1,4 @@
-# e-recipe-book
+# Food Flip Application
 
 # BEFORE GETTING STARTED
 
