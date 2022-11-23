@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap 5 image Upload with Preview</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="icon" href="foodflip.ico" >
@@ -136,11 +142,12 @@ body {
 		width: 100%;
 	}
 }
+
 </style>
 </head> 
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-	<a href="#" class="navbar-brand">Food<b>Flip</b></a>  		
+	<a href="index.html" class="navbar-brand">Food<b>Flip</b></a>  		
 	<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
 		<span class="navbar-toggler-icon"></span>
 	</button>
@@ -149,59 +156,78 @@ body {
 
 <section class="h-100 gradient-form" style="background-color: #eee;">
     <div class="p-5 bg-eee">
-    <h1><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNew Recipe</b></h1>
+    	<h1><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNew Recipe</b></h1>
     </div>
-    <div class="container py-1 h-100">
-      <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col-xl-25">
-          <div class="card rounded-3 text-black">
-            <div class="row g-0">
-              <div class="col-lg-6">
-                <div class="card-body p-md-5 mx-md-4">
-                    
-                    <div>
-                        <div class="mb-4 d-flex justify-content-center">
-                            <img src="upload.png"
-                            alt="example placeholder" style="width: 300px;" />
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <div class="btn btn-primary btn-rounded">
-                                <label class="form-label text-white m-1" for="customFile1">Upload Image</label>
-                                <input type="file" class="form-control d-none" id="customFile1" />
-                            </div>
-                        </div>
-                    </div>
-  
-                  <form>
-                    
-  
-                    <div class="form-outline mb-4">
-					<label class="form-label" for="form2Example11"></label>
-                      <input type="email" id="form2Example11" class="form-control"
-                        placeholder="Recipe Name" />
-                    </div>
-  
-                    <div class="form-outline mb-4">
-					<label class="form-label" for="form2Example22"></label>
-                      <input type="password" id="form2Example22" class="form-control"
-					  placeholder="Estimated Time" />
-                    </div>
-  
-                  </form>
-  
-                </div>
-              </div>
-              <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
-                <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-                  <h4 class="mb-4"><b><em>your favorite recipes right at your fingertips...</em></b></h4>
-                  <p class="small mb-0">Where you can gather recipes from all over 
-					the web and your family cookbooks, into one place.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
+	<div class="container col-md-6">
+		<div class="mb-5">
+			<label for="Image" class="form-label">Upload Image</label>
+			<input class="form-control" type="file" id="formFile" onchange="preview()">
+			<button onclick="clearImage()" class="btn btn-primary mt-3">Clear</button>
+		</div>
+		<img id="frame" src="" class="img-fluid" />
+	</div>
+
+	<script>
+		function preview() {
+			frame.src = URL.createObjectURL(event.target.files[0]);
+		}
+		function clearImage() {
+			document.getElementById('formFile').value = null;
+			frame.src = "";
+		}
+	</script>
+
+	<div class="main-content">
+		<div class="container">
+			<h2>Add Recipe</h2>
+			<div class="form-group">
+				<input type="text" placeholder="Recipe Name" id="recepie-name" class="form-control"/>
+			</div>
+			
+			<div class="form-group">
+				<textarea placeholder="Description" id="recepie-steps" class="form-control"></textarea>
+			</div>
+			
+			<ul class="list-group">
+				<li class="list-group-item">An item</li>
+				<li class="list-group-item">A second item</li>
+				<li class="list-group-item">A third item</li>
+				<li class="list-group-item">A fourth item</li>
+				<li class="list-group-item">And a fifth one</li>
+			  </ul>
+
+			<h2>Ingredients</h2>
+			<div class="ingredients"></div>
+
+			<div class="row">
+				<div class="col-sm-3 col-7">
+					<input type="text" id="add-ingredient" placeholder="Add Ingredient" class="form-control"/>
+				</div>
+				<div class="col-sm-3 col-5">
+					<button id="btn-ingredient" class="btn btn-primary">Add Ingredient</button>
+				</div>
+			</div>
+			
+			
+
+			<h2>Directions</h2>
+			<div class="form-group">
+				<textarea placeholder="Add Directions" id="recepie-steps" class="form-control"></textarea>
+			</div>
+
+			<h2>Notes</h2>
+			<div class="form-group">
+				<input type="text" placeholder="Add Notes" id="Notes" class="form-control"/>
+			</div>
+			
+			
+
+			<br/>
+			<button onclick="window.location.href='/index.html'" class="btn btn-primary">Save Recipe</button>
+			<button id="delete-recepie" class="btn btn-danger">Delete Recipe</button>
+		</div>
+	</div>
+</div>
   </section>
   </body>
