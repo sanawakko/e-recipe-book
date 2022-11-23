@@ -1,4 +1,4 @@
-# Food Flip Set-Up
+# FoodFlip Application Set-Up
 
 # BEFORE GETTING STARTED
 
