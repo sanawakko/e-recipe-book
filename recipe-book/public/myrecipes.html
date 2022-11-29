@@ -11,6 +11,9 @@
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script>
+  const btn = document.querySelector('btn-remove');
+</script>
 <style>
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -144,7 +147,7 @@ body {
 </head> 
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-	<a href="#" class="navbar-brand">Food<b>Flip</b></a>  		
+	<a href="signinhome.html" class="navbar-brand">Food<b>Flip</b></a>  		
 	<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
 		<span class="navbar-toggler-icon"></span>
 	</button>
@@ -165,19 +168,19 @@ body {
 			</div>
 		</form>
 		<div class="navbar-nav ml-auto">
-			<div class="btn btn-default">
+            <div class="btn btn-default">
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      My Account
+                        My Account
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="recipeupload.html">New Recipe</a>
-                      <a class="dropdown-item" href="myrecipes.html">My Recipes</a>
-                      <a class="dropdown-item" href="favorite.html">My Favorites</a>
-                      <a class="dropdown-item" href="index.html">Sign Out</a>
+                    <a class="dropdown-item" href="recipeupload.html">New Recipe</a>
+                    <a class="dropdown-item" href="#">My Recipes</a>
+                    <a class="dropdown-item" href="favorite.html">My Favorites</a>
+                    <a class="dropdown-item" href="index.html">Sign Out</a>
                     </div>
-                  </div>
-            </div>			
+                </div>
+            </div>
         </div>
 	</div>
 </nav>
@@ -203,130 +206,10 @@ body {
     border-color: #B2AC88
   }
 </style>
-  <div class="carousel-inner py-4">
-    <h4 class="mb-4"><b><em>find the right recipe for you ...</em></b></h4>
-    <!-- Single item -->
-    <div class="carousel-item active">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="card">
-              <img
-                src="Images/spaghett.jpeg"
-                class="card-img-top"
-                alt="Spaghetti & Meatballs"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Spaghetti & Meatballs</h5>
-                <p class="card-text">
-                  Easy for a busy workday and a family favorite.
-                </p>
-                <a href="#!" class="btn btn-primary">+ Add to list</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 d-none d-lg-block">
-            <div class="card">
-              <img
-                src="Images/roastedturkey.jpeg"
-                class="card-img-top"
-                alt="Sunset Over the Sea"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Roasted Turkey Breast</h5>
-                <p class="card-text">
-                  Yields the most tender, juicy meat with the crispiest skin.
-                </p>
-                <a href="#!" class="btn btn-primary">+ Add to list</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 d-none d-lg-block">
-            <div class="card">
-              <img
-                src="Images/salmon.jpeg"
-                class="card-img-top"
-                alt="Sunset over the Sea"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Teriyaki Salmon Bowl</h5>
-                <p class="card-text">
-                  A complete meal in a bowl that’s ready in just 30 minutes.
-                </p>
-                <a href="#!" class="btn btn-primary">+ Add to list</a>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div>
+<div class="carousel-inner py-4">
+    <div class="p-4">
+    	<h1><b>My Recipes</b></h1>
     </div>
-  </div>
-  
-  <!-- Inner pt 2 -->
-  <div class="carousel-inner py-4">
-    <!-- Single item -->
-    <div class="carousel-item active">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="card">
-              <img
-                src="Images/salad.jpeg"
-                class="card-img-top"
-                alt="Spaghetti & Meatballs"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Chicken Cilantro Bowl</h5>
-                <p class="card-text">
-                  Fusion bowl that is the perfect lunch or dinner.
-                </p>
-                <a href="#!" class="btn btn-primary">+ Add to list</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 d-none d-lg-block">
-            <div class="card">
-              <img
-                src="Images/soup.jpeg"
-                class="card-img-top"
-                alt="Sunset Over the Sea"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Hearty Tuscan Bean Soup</h5>
-                <p class="card-text">
-                  With winter coming along, this is the only soup you will need.
-                </p>
-                <a href="#!" class="btn btn-primary">+ Add to list</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 d-none d-lg-block">
-            <div class="card">
-              <img
-                src="Images/beef.jpeg"
-                class="card-img-top"
-                alt="Sunset over the Sea"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Beef & Broccoli</h5>
-                <p class="card-text">
-                  The best, easiest, and healthiest beef and broccoli 
-                </p>
-                <a href="#!" class="btn btn-primary">+ Add to list</a>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Inner -->
 </div>
 <!-- Carousel wrapper -->
 </html>
