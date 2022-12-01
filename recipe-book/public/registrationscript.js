@@ -35,8 +35,8 @@ function login() {
     var storedPass = localStorage.getItem('pass');
 
 
-    var userName = document.getElementById("userName").value;
-    var passWord = document.getElementById("passWord").value;
+    var userName = document.getElementById("user").value;
+    var passWord = document.getElementById("pass").value;
 
     if(userName == storedUser && passWord == storedPass){
         alert('You have been logged in.');
