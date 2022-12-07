@@ -1,8 +1,8 @@
-# FoodFlip Application Set-Up
-
 # PROJECT RELOCATED
 
 New Respositoy: https://github.com/kdlc7/recipe-blog
+
+# FoodFlip Application Set-Up
 
 ## BEFORE GETTING STARTED
 
@@ -17,9 +17,7 @@ Once you have both of these installed, configure and set these up in your termin
 
 ## Getting Started with Create React App
 
-## Available Scripts
-
-In the project directory, you can run:
+ Available Scripts - In the project directory, you can run:
 
 ### `npm start`
 
