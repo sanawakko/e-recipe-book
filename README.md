@@ -1,6 +1,10 @@
 # FoodFlip Application Set-Up
 
-# BEFORE GETTING STARTED
+# PROJECT RELOCATED
+
+New Respositoy: https://github.com/kdlc7/recipe-blog
+
+## BEFORE GETTING STARTED
 
 Download Node.js
 https://nodejs.org/en/download/
@@ -11,7 +15,7 @@ https://git-scm.com/downloads
 Once you have both of these installed, configure and set these up in your terminal with the proper commands.
 (There are different commands depending on the OS you are using.)
 
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 ## Available Scripts
 
