@@ -1,6 +1,6 @@
 # PROJECT RELOCATED
 
-New Respositoy: https://github.com/kdlc7/recipe-blog
+New Repositoy: https://github.com/kdlc7/recipe-blog
 
 # FoodFlip Application Set-Up
 
